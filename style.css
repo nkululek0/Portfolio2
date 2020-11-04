@@ -83,7 +83,7 @@ header{
 	width: 100%;
 }
 
-@media (min-width: 767px){
+@media (max-width: 767px){
 	.paragraph{
 		background-image: url('text-bg.jpg');
 	}
