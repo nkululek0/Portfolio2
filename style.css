@@ -1,111 +1,88 @@
-body{
-	background-color: white;
-	color: black;
+ * {
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+ }
+
+ h3 {
+     font-size: medium;
+ }
+
+.underline {
+    text-decoration: underline;
 }
 
-header{
-	text-align: center;
+ .header {
+     display: block;
+     position: relative;
+     text-align: center;
+     margin-top: 5px;
+ }
+
+ .header ul {
+    display: inline-block;
+    position: absolute;
+    background-color: orangered;
+    left: 17%;
+    right: 17%;
+    padding: 3px;
+ }
+
+ .header li {
+     display: inline-block;
+     border: white 2px solid;
+     width: 210px;
+     height: 30px;
+     padding-top: 5px;
+     color: white;
+ }
+
+ .header li:hover {
+     background-color: white;
+     color: orangered;
+ }
+
+ .main {
+     display: block;
+     position: relative;
+     top: 50px;
+     border: red 2px solid;
+     padding-top: 10px;
+     padding-right: 10px;
+     padding-left: 10px;
+ }
+
+ .main .intro {
+     display: block;
+     border: blue 2px solid;
+ }
+
+ .main .intro h1 {
+     position: relative;
+     text-align: center;
+     margin-top: 80px;
+ }
+
+ .main .intro .my-pic {
+     float: left;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     border: orangered 3px double;  
+ }
+
+ .main .intro .personal-statemet {
+     display: block;
+     border: green 2px solid;
+     margin-top: 95px;
+ }
+
+.main .intro .personal-statemet h3 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-.white-space{
-	display: grid;
-	grid-template-columns: auto;
-	grid-gap: 10px;
-}
-
-.page-seperator{
-	border-style: inset;
-	border-width: 1px;
-	border-radius: 20px;
-	box-shadow: 5px 5px #D3D3D1;
-}
-
-.page-heading{
-	text-align: center;
-	font-family: monospace;
-	margin: 5px 5px 5px 5px;
-}
-
-.sub-greeting{
-	font-family: monospace;
-	padding-left: 10px;
-}
-
-.contenet-border{
-	margin: 0px 40px 0px 40px;	
-	padding: 0px 10px 0px 10px;
-}
-
-.cap-grid{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 5px;
-}
-
-.indi-cap-border ul{
-	background-image: url('back3.png');
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 20px;
-	padding-right: 10px;
-}
-
-.contact-grid{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 5px;
-	text-align: center;
-}
-
-.first-list-item{
-	list-style-type: none;
-	text-decoration: underline;
-}
-
-.image{
-	border-radius: 100%;
-	width: 100px;
-	height: 100px;
-}
-
-.home-link{
-	font-family: monospace;
-	text-align: right;
-	margin-right: 10px;
-}
-
-.home-link a{
-	font-family: monospace;
-	text-decoration: bold;
-}
-.footer hr{
-	height: 3px;
-	width: 100%;
-}
-
-@media (max-width: 767px){
-	.paragraph{
-		background-image: url('text-bg.jpg');
-	}
-	.contenet-border{
-		border-style: outset;
-		border-color: black;
-		border-radius: 25px;
-		margin: 0px 40px 0px 40px;	
-		padding: 0px 10px 0px 10px;
-	}
-	.cap-grid{
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 10px;
-		margin-bottom: 10px;
-	}
-
-	.contact-grid{
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 5px;
-		text-align: center;
-		margin-bottom: 10px;
-	}
+.main .intro .personal-statemet p {
+    font-style: oblique;
+    text-align: justify;
 }
